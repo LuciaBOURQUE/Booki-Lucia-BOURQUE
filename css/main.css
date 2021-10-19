@@ -75,13 +75,19 @@ a {
     display: flex;
     justify-content: center;
 }
-
-.items-accomodations:hover, .items-activities:hover {
+.items-accomodations {
     border-top: 2px solid #0065FC;
+}
+.items-accomodations a {
+    color: #0065FC;
+}
+.items-activities:hover {
+    border-top: 2px solid #0065FC;
+}
+.items-activities a:hover {
     color: #0065FC;
 }
 
-/* ********** ********** ********** ********** ********** */
 /* Caractéristiques MAIN */
 /* SECTION 1 - Formulaire de réservation */
 main {
@@ -104,8 +110,7 @@ main {
     padding: 10px 0px 8px 10px;
 }
 
-.search-city input[type="text"]
-{
+.search-city input[type="text"] {
     font-family: raleway;
     font-weight: 600;
     font-size: 18px;
@@ -136,7 +141,7 @@ main {
 }
 
 .filters {
-    margin: 20px 0 20px 0;
+    margin: 30px 0 20px 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -152,7 +157,7 @@ main {
 }
 
 .filters-items {
-    margin-left: 20px;
+    margin-left: 25px;
     border: 2px solid #f2f2f2;
     border-radius: 30px;
     display: flex;
@@ -196,17 +201,19 @@ main {
     justify-content: space-between;
 }
 
-.accomodations-marseille { /* Voir pour mettre en % - version tablette/ordit fixe */
+.accomodations-marseille {
     width: 850px;
+    margin-right: 3%;
 }
 
 .accomodations-marseille, .accomodations-popular {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 25px;
+    padding: 25px 40px;
 }
 
 .accomodations-marseille-cards {
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -217,7 +224,7 @@ main {
     padding: 5px;
     border-radius: 20px;
     background-color: white;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     box-shadow: 2px 2px 8px rgb(0, 0, 0, 8%);
 }
 
@@ -235,8 +242,8 @@ main {
 .marseille-image {
     border-radius: 15px 15px 0 0;
     overflow: hidden;
-    width: 240px;
-    height: 120px;
+    width: 230px;
+    height: 100px;
     object-fit: cover;
 }
 
@@ -244,20 +251,32 @@ main {
     padding-left: 15px;
 }
 
-.cards-marseille-infos, .cards-popular-infos h2, p {
+.cards-marseille-infos h2 {
+    margin: 8px 0 0 0;
+}
+.cards-marseille-infos p {
+    margin: 8px 0 8px 0;
+}
+
+.cards-popular-infos h2 p {
     margin: 10px 0 10px 0;
     line-height: 20px;
 }
 
+.star {
+    margin-bottom: 5px;;
+}
+
 .star, .star-popular {
     color: #0065FC;
-    width: 100px;
+    width: 80px;
+    font-size: 13px;
     display: flex;
     justify-content: space-between;
 }
 
 .star-popular {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .star-none {
@@ -266,14 +285,23 @@ main {
 
 
 /* SECTION 2 - Populaire à Marseille */
+aside h2 {
+    width: 150px;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+aside p {
+    margin-top: 8px;
+}
 .accomodations-popular {
-    width: 450px;
+    width: 470px;
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
 }
 
 .accomodations-popular-title{
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -287,13 +315,18 @@ main {
 .popular-image {
     border-radius: 15px 0 0 15px;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
+}
+
+.chart-line {
+    font-size: 23px;
 }
 
 /* SECTION 3 - Activités à Marseille */
 .activities-cards {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -309,7 +342,10 @@ main {
     box-shadow: 2px 2px 8px rgb(0, 0, 0, 8%);
     transition: 0.5s;
 }
-
+.cards-premier, .cards-second, .cards-third,
+.cards-four {
+    margin-right: 15px;
+}
 .cards-premier:hover, .cards-second:hover, .cards-third:hover,
 .cards-four:hover, .cards-five:hover, .cards-six:hover {
     transform: scale(1.05);
@@ -367,6 +403,7 @@ main {
 }
 
 
+/* VERSION MOBILE */
 @media (max-width:768px) {
     .h1-title {
         font-size: 22px;
@@ -413,6 +450,9 @@ main {
     .main-reservation {
         margin: 3% 5% 0% 5%;
     }
+    .main-reservation h1 {
+        margin-top: 30px;
+    }
     .main-reservation p {
         font-size: 16px;
     }
@@ -428,14 +468,22 @@ main {
         color: white;
         background-color: #0065FC;
         padding: 12px 15px 12px 15px;
+        margin-left: -12px;
+    }
+    .filters-icons {
+        height: 40px;
+        min-width: 40px;
     }
     .filters {
+        margin: 10px 0 10px 0;
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
     }
+    .filters h2 {
+        width: 100%;
+    }
     .filters-items {
-        margin: 0 0 3% 0;
+        margin: 0 3% 3% 0;
     }
 
     /* SECTION 2 - Hébergements à Marseille */
@@ -448,11 +496,13 @@ main {
         flex-direction: column-reverse;
     }
     .accomodations-popular, .accomodations-marseille {
+        padding: 25px 20px;
         width: 100%;
         border-radius: 0;
     }
     .accomodations-popular {
         background-color: #F2F2F2;
+        margin: 3% 0 1% 0;
     }
     .cards-popular, .cards-marseille {
         margin-bottom: 20px;
@@ -466,7 +516,7 @@ main {
         font-size: 12px;
     }
     .star-popular {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     /* Hébergements à Marseille */
@@ -477,7 +527,7 @@ main {
         width: 320px;
     }
     .cards-marseille-infos h2, p {
-        line-height: 10px;
+        line-height: 15px;
     }
     .star {
         margin-top: 10px;
@@ -489,11 +539,16 @@ main {
     }
     .activities-cards {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .cards-premier, .cards-second, .cards-third,
     .cards-four, .cards-five, .cards-six {
-    margin-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .cards-premier, .cards-second, .cards-third,
+.cards-four {
+    margin-right: 0;
     }
     .activities-image-premier, .activities-image-two,
     .activities-image-three, .activities-image-four,
@@ -504,11 +559,17 @@ main {
 
     /* Caractéristiques FOOTER */
     .footer-nav {
-        padding-left: 10%;
-       flex-direction: column;
+    margin-top: 8%;
+    padding: 10% 0 8% 10%;
+    flex-direction: column;
     }
 
     .footer-nav-accommodation {
-        margin: 2% 0;
+    margin: 2% 0;
     }
+}
+
+/* VERSION TABLETTE */
+@media (max-width:992px) {
+
 }
