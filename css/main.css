@@ -15,6 +15,8 @@ img {
 }
 
 
+
+
 /*  Paramètres général */
 html {
     background-color: rgb(255, 255, 255);
@@ -44,7 +46,6 @@ a {
 }
 
 
-/* ********** ********** ********** ********** ********** */
 /* Caractéristiques NAVIGATION - HEADER DESKTOP */
 .main-nav { 
     padding: 0% 3% 0% 3%;
@@ -399,6 +400,21 @@ aside p {
 }
 
 
+/* VERSION LARGE */
+@media (min-width: 1600px) {
+    .cards-marseille {
+        width: 31%;
+    }
+    .marseille-image {
+        width: 350px;
+    }
+    .activities-image-premier, .activities-image-two,
+    .activities-image-three, .activities-image-four,
+    .activities-image-five, .activities-image-six {
+    width: 420px;
+    }
+}
+
 /* VERSION TABLETTE */
 @media (max-width:992px) and (min-width:768px) {
     #main-accommodations {
@@ -452,7 +468,6 @@ aside p {
     height: 130px; 
     }
 }
-
 
 
 /* VERSION MOBILE */
@@ -538,7 +553,7 @@ aside p {
         margin: 0 3% 3% 0;
     }
 
-    /* SECTION 2 - Hébergements à Marseille - MOBILE*/
+    /* SECTION 2 - Hébergements à Marseille - MOBILE */
     /* Les plus populaire */
     main {
         padding: 0;
@@ -571,7 +586,7 @@ aside p {
         margin-top: 50px;
     }
 
-    /* Hébergements à Marseille - MOBILE*/
+    /* Hébergements à Marseille - MOBILE */
     .accomodations-marseille {
         background-color: #ffffff;
     }
