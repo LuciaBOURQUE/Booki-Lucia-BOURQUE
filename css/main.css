@@ -21,21 +21,18 @@ html {
 }
 
 .h1-title {
-    /* border: 1px solid rgb(130, 119, 230); */
     font-family: raleway;
     font-weight: 700;
     font-size: 20px;
 }
 
 h2 {
-    /* border: 1px solid rgb(130, 119, 230); */
     font-family: raleway;
     font-weight: 600;
     font-size: 17px;
 }
 
 p {
-    /* border: 1px solid rgb(130, 119, 230); */
     font-family: raleway;
     font-weight: normal;
     font-size: 15px;
@@ -48,7 +45,7 @@ a {
 
 
 /* ********** ********** ********** ********** ********** */
-/* Caractéristiques NAVIGATION - HEADER */
+/* Caractéristiques NAVIGATION - HEADER DESKTOP */
 .main-nav { 
     padding: 0% 3% 0% 3%;
     display: flex;
@@ -89,7 +86,7 @@ a {
 }
 
 /* Caractéristiques MAIN */
-/* SECTION 1 - Formulaire de réservation */
+/* SECTION 1 - Formulaire de réservation - DESKTOP */
 main {
     padding: 0% 3% 0% 3%;
 }
@@ -147,11 +144,6 @@ main {
     flex-wrap: wrap;
 }
 
-.filters-items:hover {
-    background-color: rgb(242, 242, 242, 10);
-    color: #0065FC;
-}
-
 .filters-items h2 {
     margin: 0 15px 0 10px;
 }
@@ -163,6 +155,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.filters-items:hover {
+    background-color: rgb(242, 242, 242, 10);
+    color: #0065FC;
 }
 
 .filters-icons {
@@ -194,7 +190,7 @@ main {
 }
 
 
-/* SECTION 2 - Hébergements à Marseille */
+/* SECTION 2 - Hébergements à Marseille - DESKTOP */
 #main-accommodations {
     margin: 1% 0 3% 0;
     display: flex;
@@ -202,14 +198,14 @@ main {
 }
 
 .accomodations-marseille {
-    width: 850px;
+    width: 65%;
     margin-right: 3%;
 }
 
 .accomodations-marseille, .accomodations-popular {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 25px 40px;
+    padding: 2% 3%;
 }
 
 .accomodations-marseille-cards {
@@ -284,7 +280,7 @@ main {
 }
 
 
-/* SECTION 2 - Populaire à Marseille */
+/* SECTION 2 - Populaire à Marseille - DESKTOP */
 aside h2 {
     width: 150px;
     flex-wrap: wrap;
@@ -294,7 +290,7 @@ aside p {
     margin-top: 8px;
 }
 .accomodations-popular {
-    width: 470px;
+    width: 35%;
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
@@ -324,7 +320,7 @@ aside p {
     font-size: 23px;
 }
 
-/* SECTION 3 - Activités à Marseille */
+/* SECTION 3 - Activités à Marseille - DESKTOP */
 .activities-cards {
     margin-top: 30px;
     display: flex;
@@ -382,11 +378,11 @@ aside p {
     height: 150px;
 }
 
-/* Caractéristiques FOOTER */
+/* Caractéristiques FOOTER - DESKTOP */
 .footer-nav {
     background-color: #F2F2F2;
     margin-top: 3%;
-    padding: 2% 2% 1% 3%;
+    padding: 2% 2% 2% 3%;
     display: flex;
 }
 
@@ -429,7 +425,7 @@ aside p {
     }
     .cards-premier, .cards-second, .cards-third,
     .cards-four, .cards-five, .cards-six {
-        margin: 0 3% 3% 0;
+        margin-bottom: 3%;
     }
     .cards-four:nth-child(3) {
         order: 2;
@@ -474,7 +470,7 @@ aside p {
         font-size: 18px;
     }
 
-    /* Caractéristiques NAVIGATION - HEADER */
+    /* Caractéristiques NAVIGATION - HEADER MOBILE */
     .main-nav {
         padding: 0;
         display: flex;
@@ -502,7 +498,7 @@ aside p {
     }
 
     /* Caractéristiques MAIN */
-    /* SECTION 1 - Formulaire de réservation */
+    /* SECTION 1 - Formulaire de réservation - MOBILE */
     .main-reservation {
         margin: 3% 5% 0% 5%;
     }
@@ -542,7 +538,7 @@ aside p {
         margin: 0 3% 3% 0;
     }
 
-    /* SECTION 2 - Hébergements à Marseille */
+    /* SECTION 2 - Hébergements à Marseille - MOBILE*/
     /* Les plus populaire */
     main {
         padding: 0;
@@ -575,7 +571,7 @@ aside p {
         margin-top: 50px;
     }
 
-    /* Hébergements à Marseille */
+    /* Hébergements à Marseille - MOBILE*/
     .accomodations-marseille {
         background-color: #ffffff;
     }
@@ -589,7 +585,7 @@ aside p {
         margin-top: 10px;
     }
 
-    /* SECTION 3 - Activités à Marseille */
+    /* SECTION 3 - Activités à Marseille - MOBILE */
     #main-activities {
         padding: 0 25px;
     }
@@ -613,7 +609,7 @@ aside p {
     height: 130px; 
     }
 
-    /* Caractéristiques FOOTER */
+    /* Caractéristiques FOOTER - MOBILE */
     .footer-nav {
     margin-top: 8%;
     padding: 10% 0 8% 10%;
