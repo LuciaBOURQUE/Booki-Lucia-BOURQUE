@@ -10,10 +10,9 @@ img {
 
 /*  Typographies */
 @font-face {
-     font-family:'raleway';
+     font-family: raleway ;
      src: url('../polices/Raleway.ttf') format('ttf');
 }
-
 
 
 
@@ -22,25 +21,26 @@ html {
     background-color: rgb(255, 255, 255);
 }
 
-.h1-title {
-    font-family: raleway;
+.h1-title, h2 {
+    font-family: raleway, sans-serif;
     font-weight: 700;
     font-size: 20px;
 }
 
-h2 {
-    font-family: raleway;
+h3 {
+    font-family: raleway, sans-serif;
     font-weight: 600;
     font-size: 17px;
 }
 
 p {
-    font-family: raleway;
+    font-family: raleway, sans-serif;
     font-weight: normal;
     font-size: 15px;
 }
 
 a {
+    font-family: raleway, sans-serif;
     text-decoration: none;
     color: black;
 }
@@ -56,7 +56,7 @@ a {
 
 .main-nav-items {
     width: 300px;
-    font-family: raleway;
+    font-family: raleway, sans-serif;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
@@ -109,7 +109,7 @@ main {
 }
 
 .search-city input[type="text"] {
-    font-family: raleway;
+    font-family: raleway, sans-serif;
     font-weight: 600;
     font-size: 18px;
 }
@@ -121,7 +121,7 @@ main {
 .button-search {
     border: none;
     border-radius: 0 10px 10px 0;
-    font-family: raleway;
+    font-family: raleway, sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: white;
@@ -145,7 +145,7 @@ main {
     flex-wrap: wrap;
 }
 
-.filters-items h2 {
+.filters-items h3 {
     margin: 0 15px 0 10px;
 }
 
@@ -248,14 +248,14 @@ main {
     padding-left: 15px;
 }
 
-.cards-marseille-infos h2 {
+.cards-marseille-infos h3 {
     margin: 8px 0 0 0;
 }
 .cards-marseille-infos p {
     margin: 8px 0 8px 0;
 }
 
-.cards-popular-infos h2 p {
+.cards-popular-infos h3 p {
     margin: 10px 0 10px 0;
     line-height: 20px;
 }
@@ -282,7 +282,7 @@ main {
 
 
 /* SECTION 2 - Populaire à Marseille - DESKTOP */
-aside h2 {
+aside h3 {
     width: 150px;
     flex-wrap: wrap;
     margin-bottom: 0px;
@@ -327,7 +327,7 @@ aside p {
     display: flex;
     justify-content: space-between;
 }
-.activities-cards h2 {
+.activities-cards h3 {
     margin: 20px;
 }
 
@@ -389,7 +389,7 @@ aside p {
 
 .footer-nav ul {
     list-style-type: none;
-    font-family: raleway;
+    font-family: raleway, sans-serif;
     font-size: 16px;
     line-height: 30px;
     padding-left: 0;
@@ -402,6 +402,9 @@ aside p {
 
 /* VERSION LARGE */
 @media (min-width: 1600px) {
+    .h1-title, h2 {
+        font-size: 25px;
+    }
     .cards-marseille {
         width: 31%;
     }
@@ -416,7 +419,7 @@ aside p {
 }
 
 /* VERSION TABLETTE */
-@media (max-width:992px) and (min-width:768px) {
+@media (max-width:992px) and (min-width:768px) {    
     #main-accommodations {
         display: flex;
         flex-direction: column-reverse;
@@ -476,6 +479,9 @@ aside p {
         font-size: 22px;
     }
     h2 {
+        font-size: 22px;
+    }
+    h3 {
         font-size: 16px;
     }
     p {
@@ -546,7 +552,7 @@ aside p {
         display: flex;
         align-items: flex-start;
     }
-    .filters h2 {
+    .filters h3 {
         width: 100%;
     }
     .filters-items {
