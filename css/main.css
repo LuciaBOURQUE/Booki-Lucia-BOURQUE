@@ -226,8 +226,13 @@ main {
 }
 
 .cards-marseille {
-    width: fit-content;
+    width: 30%;
     transition: 0.5s;
+}
+@media (max-width: 1334px) {
+    .cards-marseille {
+        width: 47%;
+    }
 }
 
 .cards-marseille:hover, .cards-popular:hover {
@@ -239,7 +244,7 @@ main {
 .marseille-image {
     border-radius: 15px 15px 0 0;
     overflow: hidden;
-    width: 230px;
+    width: 100%;
     height: 100px;
     object-fit: cover;
 }
@@ -444,6 +449,7 @@ aside p {
     }
     .cards-premier, .cards-second, .cards-third,
     .cards-four, .cards-five, .cards-six {
+        width: 45%;
         margin-bottom: 3%;
     }
     .cards-four:nth-child(3) {
@@ -467,7 +473,7 @@ aside p {
     .activities-image-premier, .activities-image-two,
     .activities-image-three, .activities-image-four,
     .activities-image-five, .activities-image-six {
-    width: 320px;
+    width: 100%;
     height: 130px; 
     }
 }
@@ -614,19 +620,24 @@ aside p {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin: 0;
     }
     .cards-premier, .cards-second, .cards-third,
     .cards-four, .cards-five, .cards-six {
+        width: 100%;
         margin-bottom: 20px;
     }
     .cards-premier, .cards-second, .cards-third,
     .cards-four {
     margin-right: 0;
     }
+    .second-third-image, .five-six-image {
+        width: 100%;
+    }
     .activities-image-premier, .activities-image-two,
     .activities-image-three, .activities-image-four,
     .activities-image-five, .activities-image-six {
-    width: 320px;
+    width: 100%;
     height: 130px; 
     }
 
