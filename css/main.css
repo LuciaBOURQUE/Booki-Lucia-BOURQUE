@@ -14,8 +14,6 @@ img {
      src: url('../polices/Raleway.ttf') format('ttf');
 }
 
-
-
 /*  Paramètres général */
 html {
     background-color: rgb(255, 255, 255);
@@ -229,10 +227,10 @@ main {
     width: 30%;
     transition: 0.5s;
 }
-@media (max-width: 1334px) {
+@media (max-width: 1330px) and (min-width: 380px) {
     .cards-marseille {
         width: 47%;
-    }
+    } 
 }
 
 .cards-marseille:hover, .cards-popular:hover {
@@ -406,7 +404,7 @@ aside p {
 
 
 /* VERSION LARGE */
-@media (min-width: 1600px) {
+@media (min-width: 1500px) { /* Au dessus de 1500px on applique ses instrcutions */
     .h1-title, h2 {
         font-size: 25px;
     }
@@ -423,8 +421,8 @@ aside p {
     }
 }
 
-/* VERSION TABLETTE */
-@media (max-width:992px) and (min-width:768px) {    
+/* VERSION TABLETTE - POPULAIRE ET HEBERGEMENTS */
+@media (max-width:992px) and (min-width:768px) { /* En dessous de 992px jusqu'à 768px on applique ses instrcutions */
     #main-accommodations {
         display: flex;
         flex-direction: column-reverse;
@@ -442,6 +440,10 @@ aside p {
         height: 130px;
         object-fit: cover;
     }
+}
+
+/* VERSION TABLETTE - ACTIVITÉS À MARSEILLE */
+@media (max-width: 992px) and (min-width:420px){
     .activities-cards {
         height: 100%;
         display: flex;
@@ -478,7 +480,6 @@ aside p {
     }
 }
 
-
 /* VERSION MOBILE */
 @media (max-width:768px) {
     .h1-title {
@@ -499,7 +500,7 @@ aside p {
 
     /* Caractéristiques NAVIGATION - HEADER MOBILE */
     .main-nav {
-        padding: 0;
+        padding: 15px 0 0 0;
         display: flex;
         flex-direction: column;
     }
@@ -587,23 +588,23 @@ aside p {
         margin-bottom: 20px;
     }
     .popular-image {
-        width: 120px;
-        height: 140px;
+        width: 250px;
+        height: 130px;
     }
     .star, .star-popular {
         width: 60px;
         font-size: 12px;
     }
     .star-popular {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
     /* Hébergements à Marseille - MOBILE */
     .accomodations-marseille {
         background-color: #ffffff;
     }
-    .marseille-image {
-        width: 320px;
+    .marseille-image { /* à modifier */
+        width: 450px;
     }
     .cards-marseille-infos h2, p {
         line-height: 15px;
@@ -624,7 +625,7 @@ aside p {
     }
     .cards-premier, .cards-second, .cards-third,
     .cards-four, .cards-five, .cards-six {
-        width: 100%;
+        width: 45%;
         margin-bottom: 20px;
     }
     .cards-premier, .cards-second, .cards-third,
@@ -650,5 +651,21 @@ aside p {
 
     .footer-nav-accommodation {
     margin: 2% 0;
+    }
+}
+
+/* VERSION MOBILE - IPHONE 8/7/6 et Plus */
+@media (max-width: 420px) {
+    .popular-image {
+        width: 120px;
+        height: 140px;
+    }
+    .cards-marseille {
+        width: 100%;
+    }
+    .cards-premier, .cards-second,
+    .cards-third, .cards-four,
+    .cards-five, .cards-six {
+        width: 100%;
     }
 }
