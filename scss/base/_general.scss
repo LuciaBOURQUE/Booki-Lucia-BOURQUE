@@ -20,6 +20,27 @@ html {
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 420px) { // À REVOIR 
 
+}
+
+h2 {
+    font-family : $police ;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+h3 {
+    font-family : $police ;
+    font-weight: 300; // Trouver comment épaisseur typo
+    font-size: 1.1em;
+}
+h4 {
+    font-family : $police ;
+    font-weight: 300; 
+    font-size: 1em;
+}
+p {
+    font-family : $police ; // Revoir dimension car pas sur
+    font-weight: 300; 
+    font-size: 0.8em;
 }
