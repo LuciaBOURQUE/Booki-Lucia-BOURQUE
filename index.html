@@ -2,292 +2,145 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="scss/main.scss">
         <link rel="stylesheet" href="css/normalize.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="images/logo/Booki@3x.png">
+        <link rel="icon" type="image/png" href="images/logo/ohmyfood@2x.svg">
         <script src="https://kit.fontawesome.com/6b82c41e21.js" crossorigin="anonymous"></script>
-        <title>Booki - Vos vacances réussi</title>   
+        <title>Oh my food</title>   
     </head>
 
     <body>
-        <header> <!-- HEADER - NAVIGATION-->
+        <header>
             <nav class="main-nav">
-                    <div class="main-nav-logo">
-                        <a id="logo_reservia" href="index.html"><img src="images/logo/Booki.png" alt="Logo de Booki - page d'accueil" width="100" /></a>
-                    </div>
-
-                    <div class="main-nav-items">
-                        <div class="items-accomodations"><a href="#main-accommodations">Hébergements</a></div>
-                        <div class="items-activities"><a href="#main-activities">Activités</a></div>
-                    </div>
+                <a id="logo_ohmyfood" href="#"><img src="images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood"></a>
             </nav>
         </header>
 
-        <main> <!-- CONTENU PAGE D'ACCUEIL -->
-            <section class="main-reservation"> <!-- SECTION 1 / Formulaire de Réservation -->
-                <form method="post" action="traitement.php">
-                    <h1 class="h1-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
+        <main>
+            <section class="exploration"> <!-- SECTION 1 - Explorer restaurant lieu -->
+                <div class="exploration-place">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Paris, Belleville</h4>
+                </div>
 
-                    <div class="search-city">
-                        <div class="search-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <label for="ville"><input type="text" name="ville" id="ville" placeholder="Marseille, France" size="22"/></label>
-                        <a class="button-search" aria-hidden="false" href="#">Rechercher</a>
-                        <div class="button-search-icon" aria-hidden="true"><i class="fas fa-search"></i></div>
-                    </div>
+                <h2>Réservez le menu qui vous convient</h2>
 
-                    <div class="filters">
-                        <h3>Filtres</h3>
+                <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
 
-                        <a href="#" class="filters-items">
-                            <div class="filters-icons"><i class="fas fa-money-bill-wave"></i></div>
-                            <h3>Économique</h3>
-                        </a>
-
-                        <a href="#" class="filters-items">
-                            <div class="filters-icons"><i class="fas fa-child"></i></div>
-                            <h3>Familial</h3>
-                        </a>
-
-                        <a href="#" class="filters-items">
-                            <div class="filters-icons"><i class="fas fa-heart"></i></div>
-                            <h3>Romantique</h3>
-                        </a>
-
-                        <a href="#" class="filters-items">
-                            <div class="filters-icons"><i class="fas fa-dog"></i></div>
-                            <h3>Animaux autorisés</h3>
-                        </a>
-                    </div>
-
-                    <div class="infos">
-                        <div class="infos-icon"><i class="fas fa-info"></i></div>
-                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                    </div>
-                </form>
+                <button>Explorer nos restaurants</button>
             </section>
 
-            <section id="main-accommodations"> <!-- SECTION 2 / Hébergements à Marseille -->
-                <section class="accomodations-marseille">
-                    <h2>Hébergements à Marseille</h2>
+            <section class="functioning"> <!-- SECTION 2 - Fonctionnement application -->
+                <h2>Fonctionnement</h2>
 
-                    <div class="accomodations-marseille-cards">
-                        <a href="#" class="cards-marseille"> <!-- Ligne 1 - 1er carte -->
-                            <img class="marseille-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge_cannebiere">
-                            <div class="cards-marseille-infos">
-                                <h3>Auberge La Cannebière</h3>
-                                <p>Nuit à partir de <strong>25€</strong></p>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star star-none"></i>
-                                </div>
-                            </div>
-                        </a>
-    
-                        <a href="#" class="cards-marseille"> <!-- Ligne 1 - 2e carte -->
-                            <img class="marseille-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel_port">
-                            <div class="cards-marseille-infos">
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de <strong>52€</strong></p>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </a>
-    
-                        <a href="#" class="cards-marseille"> <!-- Ligne 1 - 3e carte -->
-                            <img class="marseille-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel_mouettes">
-                            <div class="cards-marseille-infos">
-                                <h3>Hôtel Les mouettes</h3>
-                                <p>Nuit à partir de <strong>76€</strong></p>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star star-none"></i>
-                                </div>
-                            </div>
-                        </a>
+                <div class="step_1">
+                    <div><h4>1</h4></div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Choisissez un restaurant</h4>
+                </div>
 
-                        <a href="#" class="cards-marseille"> <!-- Ligne 2 - 1er carte -->
-                            <img class="marseille-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel_mer">
-                            <div class="cards-marseille-infos">
-                                <h3>Hôtel de la mer</h3>
-                                <p>Nuit à partir de <strong>46€</strong></p>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star star-none"></i>
-                                    <i class="fas fa-star star-none"></i>
-                                </div>
-                            </div>
-                        </a>
-    
-                        <a href="#" class="cards-marseille"> <!-- Ligne 2 - 2e carte -->
-                            <img class="marseille-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge_panier">
-                            <div class="cards-marseille-infos">
-                                <h3>Auberge Le Panier</h3>
-                                <p>Nuit à partir de <strong>23€</strong></p>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star star-none"></i>
-                                </div>
-                            </div>
-                        </a>
-    
-                        <a href="#" class="cards-marseille"> <!-- Ligne 2 - 3e carte -->
-                            <img class="marseille-image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel_amina">
-                            <div class="cards-marseille-infos">
-                                <h3>Hôtel chez Amina</h3>
-                                <p>Nuit à partir de <strong>96€</strong></p>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="step_2">
+                    <div><h4>2</h4></div>
+                    <i class="fas fa-list-ul"></i>
+                    <h4>Composez votre menu</h4>
+                </div>
 
-                    <h2><a href="#">Afficher plus</a></h2>
-                </section>
-
-                <aside class="accomodations-popular">
-                    <div class="accomodations-popular-title">
-                        <h2>Les plus populaires</h2>
-                        <i class="fas fa-chart-line chart-line"></i>
-                    </div>
-
-                    <a href="#" class="cards-popular"> <!-- Ligne 1 - 1er carte -->
-                        <img class="popular-image" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel_soleilmatin">
-                        <div class="cards-popular-infos">
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p> Nuit à partir de 128€</p>
-                            <div class="star-popular">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="cards-popular"> <!-- Ligne 2 - 2e carte -->
-                        <img class="popular-image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre_hote">
-                        <div class="cards-popular-infos">
-                            <h3>Au coeur de l'eau
-                                Chambres d'hôtes</h3>
-                            <p> Nuit à partir de 71€</p>
-                            <div class="star-popular">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star star-none"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="cards-popular"> <!-- Ligne 3 - 3e carte -->
-                        <img class="popular-image" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel_bleublanc">
-                        <div class="cards-popular-infos">
-                            <h3>Hôtel tout Bleu et Blanc</h3>
-                            <p> Nuit à partir de 68€</p>
-                            <div class="star-popular">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star star-none"></i>
-                            </div>
-                        </div>
-                    </a>
-                </aside>
+                <div class="step_3">
+                    <div><h4>3</h4></div>
+                    <i class="fas fa-store"></i>
+                    <h4>Dégustez au restaurant</h4>
+                </div>
             </section>
 
-            <section id="main-activities"> <!-- SECTION 3 / Activités à Marseille -->
-                <h2>Activités à Marseille</h2>
+            <section class="restaurants"> <!-- SECTION 3 - Liste restaurants -->
+                <h2>Restaurants</h2>
 
-                <div class="activities-cards">
-                    <a href="#" class="cards-premier"> <!-- 1er carte -->
-                        <img class="activities-image-premier" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux_port">
-                        <h3>Vieux Port</h3>
+                <div class="palette-gout">
+                    <a class="restaurant-image" href="#"> <!-- href="page1.html" / + ajout Nouveau -->
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant-jay-wennington">
                     </a>
-
-                    <div class="second-third-image"> <!-- 2e et 3e carte -->
-                        <a href="#" class="cards-second"> <!-- 2e carte -->
-                            <img class="activities-image-two" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort_pomegues">
-                            <h3>Fort de Pomègues</h3>
-                        </a>
-    
-                        <a href="#" class="cards-third"> <!-- 3e carte -->
-                            <img class="activities-image-three" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="ile_frioul">
-                            <h3>Îles du Frioul</h3>
-                        </a>
+                    <div class="restaurant-infos">
+                        <div class="infos-title">
+                            <h4>La palette du goût</h4>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="infos-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
                     </div>
+                </div>
 
-                    <a href="#" class="cards-four"> <!-- 4e carte -->
-                        <img class="activities-image-four" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc_calanques">
-                        <h3>Parc National des Calanques</h3>
+                <div class="note-enchantee">
+                    <a class="restaurant-image" href="#"> <!-- href="page2.html" / + ajout Nouveau -->
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant-still">
                     </a>
+                    <div class="restaurant-infos">
+                        <div class="infos-title">
+                            <h4>La note enchantée</h4>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="infos-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="five-six-image"> <!-- 5e et 6e carte -->
-                        <a href="#" class="cards-five"> <!-- 5e carte -->
-                            <img class="activities-image-five" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre_dame">
-                            <h3>Notre-Dame-de-la-Garde</h3>
-                        </a>
-    
-                        <a href="#" class="cards-six"> <!-- 6e carte -->
-                            <img class="activities-image-six" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc_longchamp">
-                            <h3>Parc Longchamp</h3>
-                        </a>
+                <div class="la-francaise">
+                    <a class="restaurant-image" href="#"> <!-- href="page3.html" /+ ajout Nouveau -->
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant-toa-heftiba">
+                    </a>
+                    <div class="restaurant-infos">
+                        <div class="infos-title">
+                            <h4>À la française</h4>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="infos-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="delice-sens">
+                    <a class="restaurant-image" href="#"> <!-- href="page4.html" + ajout Nouveau -->
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant-louis-hansel">
+                    </a>
+                    <div class="restaurant-infos">
+                        <div class="infos-title">
+                            <h4>Le délice des sens</h4>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="infos-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer> <!-- NAVIGATION FOOTER -->
+        <footer>
             <nav class="footer-nav">
-                <div class="footer-nav-about"> <!-- Liste À propos -->
-                    <h3>À propos</h3>
-                    <ul class="footer-about">
-                        <li class="footer-about-list"><a href="#">Fonctionnement du site</a></li>
-                        <li class="footer-about-list"><a href="#">Conditions générales de vente</a></li>
-                        <li class="footer-about-list"><a href="#">Données et confidentialité</a></li>
-                    </ul>
-                </div>
+                <a class="logo-image" href="#"><img src="images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood"></a>
 
-                <div class="footer-nav-accommodation"> <!-- Liste Nos Hébergements -->
-                    <h3>Nos hébergements</h3>
-                    <ul class="footer-accommodation">
-                        <li class="footer-accommodation-list"><a href="#">Charte qualité</a></li>
-                        <li class="footer-accommodation-list"><a href="#">Soumettre votre hôtel</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-nav-assistance"> <!-- Liste Assistance -->
-                    <h3>Assistance</h3>
-                    <ul class="footer-assistance">
-                        <li class="footer-assistance-list"><a href="#">Centre d'aide</a></li>
-                        <li class="footer-assistance-list"><a href="#">Nous contacter</a></li>
-                    </ul>
-                </div>
+                <ul class="footer-list">
+                    <li class="footer-items">
+                        <i class="fas fa-utensils"></i>
+                        <a href="#">Proposer un restaurant</a>
+                    </li>
+                    <li class="footer-items">
+                        <i class="fas fa-hands-helping"></i>
+                        <a href="#">Devenir partenaire</a>
+                    </li>
+                    <li class="footer-items">
+                        <a href="#">Mention légales</a>
+                    </li>
+                    <li class="footer-items">
+                        <a href="#">Contact</a> <!-- Renvoie vers une adresse mail-->>
+                    </li>
+                </ul>
             </nav>
         </footer>
     </body>

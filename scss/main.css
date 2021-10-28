@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* Système 7-1 ordre :
+Utils
+    - Variables V
+    - Fonctions
+    - Mixins V
+    - Placeholders
+Base
+Composants (type boutons et autres...)
+Layout
+Pages */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*  Typographies */
+@font-face {
+  font-family: raleway;
+  src: url("../polices/Raleway.ttf") format("ttf");
+}
+
+/*  Paramètres général */
+html {
+  background-color: white;
+}
+/*# sourceMappingURL=main.css.map */
