@@ -1,0 +1,67 @@
+// SECTION 1 - Exploration des restaurants lieu
+.exploration {
+    background-color: $graybackground;
+}
+.exploration, .functioning, .restaurants { // Identique pour les deux autres sections > MIXINS "Layout section"
+    @include layoutsection;
+    .exploration-place {
+        border: greenyellow 1px solid;
+        display: flex;
+        padding: 0;
+    }
+    h2 {
+        border: greenyellow 1px solid;
+        text-align: center;
+        padding: 0 10%;
+    }
+    h3 {
+        border: greenyellow 1px solid;
+        text-align: center;
+        margin: 0;
+    }
+    button {
+        border: greenyellow 1px solid;
+        border-radius: 30px;
+        font-family : $police ;
+        font-weight: 300; 
+        font-size: 1em;
+        text-align: center;
+        margin: 8% 0;
+        padding: 4% 6%;
+    }
+}
+
+// SECTION 2 - Fonctionnement application
+.functioning h2 {
+    padding: 0;
+    margin-right: 45%;
+}
+.step-1, .step-2, .step-3 {
+   // border: greenyellow 1px solid;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: $graybackground;
+    display: flex;
+    align-items: center;
+    box-shadow: grey;
+    .step-1__number,
+    .step-2__number,
+    .step-3__number {
+        color: white;
+        background-color: $violetcolor;
+        align-items: center;
+        padding: 3px 8px;
+        border-radius: 25px;
+        margin-left: -14px;
+    }
+    .number {
+        margin-left: 20px;
+    }
+    .step-1__step, .step-2__step, .step-3__step {
+        margin-left: 20px ;
+    }
+}
+.step-3 {
+    background-color: rgba(147, 86, 220, 0.1);
+}

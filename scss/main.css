@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* Système 7-1 ordre :
+Utils
+    - Variables V
+    - Fonctions
+    - Mixins V
+    - Placeholders
+Base
+Composants (type boutons et autres...)
+Layout
+Pages */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*  Typographies */
+@font-face {
+  font-family: raleway;
+  src: url("../polices/Raleway.ttf") format("ttf");
+}
+
+/*  Paramètres général */
+html {
+  background-color: white;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.main-nav {
+  border: 1px solid pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5% 0 2% 0;
+}
+
+.exploration {
+  background-color: #F6F6F6;
+}
+
+.exploration, .functioning, .restaurants {
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5%;
+}
+
+.exploration .exploration-place, .functioning .exploration-place, .restaurants .exploration-place {
+  border: greenyellow 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.exploration h2, .functioning h2, .restaurants h2 {
+  border: greenyellow 1px solid;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.exploration h3, .functioning h3, .restaurants h3 {
+  border: greenyellow 1px solid;
+  text-align: center;
+  margin: 0;
+}
+
+.exploration button, .functioning button, .restaurants button {
+  border: greenyellow 1px solid;
+  border-radius: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  margin: 8% 0;
+  padding: 4% 6%;
+}
+
+.functioning h2 {
+  padding: 0;
+  margin-right: 45%;
+}
+
+.step-1, .step-2, .step-3 {
+  width: 90%;
+  margin: 10px 0;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: grey;
+          box-shadow: grey;
+}
+
+.step-1 .step-1__number,
+.step-1 .step-2__number,
+.step-1 .step-3__number, .step-2 .step-1__number,
+.step-2 .step-2__number,
+.step-2 .step-3__number, .step-3 .step-1__number,
+.step-3 .step-2__number,
+.step-3 .step-3__number {
+  color: white;
+  background-color: #9356DC;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 8px;
+  border-radius: 25px;
+  margin-left: -14px;
+}
+
+.step-1 .number, .step-2 .number, .step-3 .number {
+  margin-left: 20px;
+}
+
+.step-1 .step-1__step, .step-1 .step-2__step, .step-1 .step-3__step, .step-2 .step-1__step, .step-2 .step-2__step, .step-2 .step-3__step, .step-3 .step-1__step, .step-3 .step-2__step, .step-3 .step-3__step {
+  margin-left: 20px;
+}
+
+.step-3 {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+/*# sourceMappingURL=main.css.map */
